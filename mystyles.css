@@ -1,6 +1,13 @@
 /* font-family: 'Roboto Condensed', sans-serif;
 font-family: 'IBM Plex Sans', sans-serif; */
 
+
+:root {
+  --off-white-txt-color: #f3f3f3;
+  --black-txt-color: #000;
+  --light-grey-color: #d3d3d3;
+}
+
 .navbar-brand {
   padding-left: 1%;
 }
@@ -14,14 +21,14 @@ a.navbar-brand span.pageTitle {
 
 a {
   text-decoration: none;
-  color: #d3d3d3;
+  color: var(--light-grey-color);
   font-size: 1.1rem;
   font-variant: small-caps;
 }
 
 a:hover {
   text-decoration: none;
-  color: #000;
+  color: var(--black-txt-color);
 }
 
 .full-width-image {
@@ -40,13 +47,13 @@ h1 {
   padding-bottom: 2%;
   margin-top: 55%;
   font-size: 1.7rem;
-  color: #f3f3f3;
+  color: var(--off-white-txt-color);
   text-align: center;
 }
 
 p.introText {
   max-width: 500px;
-  color: #f3f3f3;
+  color: var(--off-white-txt-color);
   text-align: center;
   font-weight: 100;
   font-family: 'IBM Plex Sans', sans-serif;
